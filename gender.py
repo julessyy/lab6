@@ -19,7 +19,6 @@ def native_american():
     return render_template("indian.html")
 
 if __name__ == '__main__':
-    app.run(port=5002, #host='127.0.0.1',
-            debug=True)
+    app.run(debug=True)
 
 	
