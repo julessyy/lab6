@@ -1,9 +1,10 @@
 
 from flask import Flask,render_template
-#import simplejson 
-
+from flask.ext.script import Manager
 
 app = Flask(__name__)
+
+manager = Manager(app)
 
 @app.route('/')
 def greetings():
@@ -19,6 +20,6 @@ def native_american():
     return render_template("indian.html")
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    manager.run()
 
 	
