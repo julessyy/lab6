@@ -1,10 +1,10 @@
 from app import app
 from flask import Flask,render_template
-from flask.ext.script import Manager
+#from flask.ext.script import Manager
 
 app = Flask(__name__)
 
-manager = Manager(app)
+#manager = Manager(app)
 
 @app.route('/')
 def main():
@@ -19,7 +19,6 @@ def gender():
 def native_american():
     return render_template("indian.html")
 
-if __name__ == '__main__':
-    manager.run()
+
 
 	
